@@ -1,0 +1,96 @@
+# =============================================================================
+# .gitignore for Salient Object Detection project
+# =============================================================================
+
+# -----------------------------------------------------------------------------
+# Dataset (too large, copyrighted — must be downloaded separately by users)
+# -----------------------------------------------------------------------------
+data/DUTS-TR/
+data/DUTS-TE/
+data/**/*.jpg
+data/**/*.jpeg
+data/**/*.png
+
+# Keep the splits directory and split files (they're small and useful)
+!data/splits/
+!data/splits/*.txt
+
+# -----------------------------------------------------------------------------
+# Trained model checkpoints (too large for GitHub)
+# Note: checkpoints in this project live OUTSIDE the repo at
+# C:\Users\dafin\ml_checkpoints\ — but ignore them anywhere just in case
+# -----------------------------------------------------------------------------
+*.pt
+*.pth
+*.ckpt
+checkpoints/
+ml_checkpoints/
+
+# -----------------------------------------------------------------------------
+# Python
+# -----------------------------------------------------------------------------
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+
+# Virtual environments
+venv/
+env/
+.venv/
+.env/
+ENV/
+
+# Distribution / build files
+build/
+dist/
+*.egg-info/
+*.egg
+pip-wheel-metadata/
+
+# -----------------------------------------------------------------------------
+# Jupyter / IPython
+# -----------------------------------------------------------------------------
+.ipynb_checkpoints/
+*.ipynb_checkpoints
+
+# -----------------------------------------------------------------------------
+# IDE / Editor settings
+# -----------------------------------------------------------------------------
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+
+# -----------------------------------------------------------------------------
+# OS / system files
+# -----------------------------------------------------------------------------
+desktop.ini
+$RECYCLE.BIN/
+ehthumbs.db
+
+# -----------------------------------------------------------------------------
+# Streamlit cache
+# -----------------------------------------------------------------------------
+.streamlit/
+
+# -----------------------------------------------------------------------------
+# Logs and temporary files
+# (Note: keep logs/*.txt — they're our training records)
+# -----------------------------------------------------------------------------
+*.log
+*.tmp
+*.bak
+
+# -----------------------------------------------------------------------------
+# Coverage / testing
+# -----------------------------------------------------------------------------
+htmlcov/
+.coverage
+.coverage.*
+.pytest_cache/
+.tox/

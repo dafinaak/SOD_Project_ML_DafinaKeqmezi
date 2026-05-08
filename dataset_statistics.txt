@@ -1,0 +1,25 @@
+============================================================
+           DUTS DATASET INSPECTION REPORT
+============================================================
+Total image-mask pairs scanned : 15572
+Corrupt / unreadable files     : 0
+
+--- Original image size distribution ---
+Width  - min:  126  max:  400  mean:  375.5  median:  400
+Height - min:  133  max:  400  mean:  322.1  median:  300
+
+--- Mask coverage distribution (% of pixels marked salient) ---
+Mean coverage   : 23.17%
+Median coverage : 20.24%
+Std deviation   : 15.52%
+Min  coverage   :  0.02%
+Max  coverage   : 84.59%
+
+--- Anomaly checks ---
+Fully empty masks (0% salient)        : 0
+Nearly empty masks (< 1% salient)     : 218
+Nearly full masks (> 95% salient)     : 0
+
+--- Class imbalance implication ---
+Average ratio of background to foreground pixels: 3.32 : 1
+============================================================

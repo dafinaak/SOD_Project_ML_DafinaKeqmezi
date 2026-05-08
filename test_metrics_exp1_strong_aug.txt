@@ -1,0 +1,6 @@
+Test metrics — exp1_strong_aug
+IoU       : 0.7661
+Precision : 0.8504
+Recall    : 0.8797
+F1        : 0.8426
+MAE       : 0.0651

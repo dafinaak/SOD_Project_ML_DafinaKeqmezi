@@ -1,0 +1,6 @@
+Test metrics — exp2_deeper_lower_lr
+IoU       : 0.7742
+Precision : 0.8530
+Recall    : 0.8846
+F1        : 0.8482
+MAE       : 0.0681

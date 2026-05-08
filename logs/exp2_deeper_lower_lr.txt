@@ -1,0 +1,628 @@
+=== Experiment: exp2_deeper_lower_lr ===
+config: {'depth': 5, 'aug_profile': 'basic', 'iou_weight': 0.5, 'lr': 0.0005, 'epochs': 20, 'batch_size': 8}
+device: cpu
+checkpoint: C:\Users\dafin\ml_checkpoints\exp2_deeper_lower_lr_best.pt
+train=10900  val=2335
+params: 31,100,513
+  [epoch 1] batch 50/1363 (  3.7%)  loss=0.9288  elapsed=0.8min
+  [epoch 1] batch 100/1363 (  7.3%)  loss=0.8899  elapsed=1.5min
+  [epoch 1] batch 150/1363 ( 11.0%)  loss=0.8635  elapsed=2.5min
+  [epoch 1] batch 200/1363 ( 14.7%)  loss=0.8487  elapsed=3.5min
+  [epoch 1] batch 250/1363 ( 18.3%)  loss=0.8357  elapsed=4.4min
+  [epoch 1] batch 300/1363 ( 22.0%)  loss=0.8261  elapsed=5.2min
+  [epoch 1] batch 350/1363 ( 25.7%)  loss=0.8186  elapsed=5.9min
+  [epoch 1] batch 400/1363 ( 29.3%)  loss=0.8117  elapsed=6.7min
+  [epoch 1] batch 450/1363 ( 33.0%)  loss=0.8029  elapsed=7.5min
+  [epoch 1] batch 500/1363 ( 36.7%)  loss=0.7959  elapsed=8.2min
+  [epoch 1] batch 550/1363 ( 40.4%)  loss=0.7880  elapsed=9.0min
+  [epoch 1] batch 600/1363 ( 44.0%)  loss=0.7813  elapsed=9.8min
+  [epoch 1] batch 650/1363 ( 47.7%)  loss=0.7751  elapsed=10.6min
+  [epoch 1] batch 700/1363 ( 51.4%)  loss=0.7706  elapsed=11.4min
+  [epoch 1] batch 750/1363 ( 55.0%)  loss=0.7641  elapsed=12.2min
+  [epoch 1] batch 800/1363 ( 58.7%)  loss=0.7596  elapsed=13.1min
+  [epoch 1] batch 850/1363 ( 62.4%)  loss=0.7564  elapsed=13.9min
+  [epoch 1] batch 900/1363 ( 66.0%)  loss=0.7515  elapsed=14.6min
+  [epoch 1] batch 950/1363 ( 69.7%)  loss=0.7466  elapsed=15.4min
+  [epoch 1] batch 1000/1363 ( 73.4%)  loss=0.7420  elapsed=16.2min
+  [epoch 1] batch 1050/1363 ( 77.0%)  loss=0.7370  elapsed=17.0min
+  [epoch 1] batch 1100/1363 ( 80.7%)  loss=0.7318  elapsed=17.8min
+  [epoch 1] batch 1150/1363 ( 84.4%)  loss=0.7274  elapsed=18.5min
+  [epoch 1] batch 1200/1363 ( 88.0%)  loss=0.7238  elapsed=19.3min
+  [epoch 1] batch 1250/1363 ( 91.7%)  loss=0.7194  elapsed=20.1min
+  [epoch 1] batch 1300/1363 ( 95.4%)  loss=0.7165  elapsed=20.9min
+  [epoch 1] batch 1350/1363 ( 99.0%)  loss=0.7130  elapsed=21.7min
+  [epoch 1] batch 1363/1363 (100.0%)  loss=0.7128  elapsed=21.8min
+
+=== epoch 1/20  train=0.7128  val=0.5789  (23.3min)  <- best ===
+
+  [epoch 2] batch 50/1363 (  3.7%)  loss=0.6068  elapsed=0.8min
+  [epoch 2] batch 100/1363 (  7.3%)  loss=0.6048  elapsed=1.6min
+  [epoch 2] batch 150/1363 ( 11.0%)  loss=0.6041  elapsed=2.5min
+  [epoch 2] batch 200/1363 ( 14.7%)  loss=0.6042  elapsed=3.5min
+  [epoch 2] batch 250/1363 ( 18.3%)  loss=0.6047  elapsed=4.6min
+  [epoch 2] batch 300/1363 ( 22.0%)  loss=0.6068  elapsed=5.6min
+  [epoch 2] batch 350/1363 ( 25.7%)  loss=0.6023  elapsed=6.7min
+  [epoch 2] batch 400/1363 ( 29.3%)  loss=0.5968  elapsed=7.7min
+  [epoch 2] batch 450/1363 ( 33.0%)  loss=0.5952  elapsed=8.8min
+  [epoch 2] batch 500/1363 ( 36.7%)  loss=0.5958  elapsed=9.8min
+  [epoch 2] batch 550/1363 ( 40.4%)  loss=0.5952  elapsed=10.8min
+  [epoch 2] batch 600/1363 ( 44.0%)  loss=0.5931  elapsed=11.9min
+  [epoch 2] batch 650/1363 ( 47.7%)  loss=0.5910  elapsed=12.9min
+  [epoch 2] batch 700/1363 ( 51.4%)  loss=0.5881  elapsed=13.9min
+  [epoch 2] batch 750/1363 ( 55.0%)  loss=0.5862  elapsed=15.0min
+  [epoch 2] batch 800/1363 ( 58.7%)  loss=0.5845  elapsed=16.0min
+  [epoch 2] batch 850/1363 ( 62.4%)  loss=0.5832  elapsed=17.1min
+  [epoch 2] batch 900/1363 ( 66.0%)  loss=0.5814  elapsed=18.1min
+  [epoch 2] batch 950/1363 ( 69.7%)  loss=0.5787  elapsed=19.2min
+  [epoch 2] batch 1000/1363 ( 73.4%)  loss=0.5768  elapsed=20.2min
+  [epoch 2] batch 1050/1363 ( 77.0%)  loss=0.5753  elapsed=21.3min
+  [epoch 2] batch 1100/1363 ( 80.7%)  loss=0.5752  elapsed=22.3min
+  [epoch 2] batch 1150/1363 ( 84.4%)  loss=0.5736  elapsed=23.3min
+  [epoch 2] batch 1200/1363 ( 88.0%)  loss=0.5725  elapsed=24.4min
+  [epoch 2] batch 1250/1363 ( 91.7%)  loss=0.5716  elapsed=25.4min
+  [epoch 2] batch 1300/1363 ( 95.4%)  loss=0.5700  elapsed=26.5min
+  [epoch 2] batch 1350/1363 ( 99.0%)  loss=0.5684  elapsed=27.6min
+  [epoch 2] batch 1363/1363 (100.0%)  loss=0.5681  elapsed=27.8min
+
+=== epoch 2/20  train=0.5681  val=0.4721  (29.8min)  <- best ===
+
+  [epoch 3] batch 50/1363 (  3.7%)  loss=0.5268  elapsed=1.1min
+  [epoch 3] batch 100/1363 (  7.3%)  loss=0.5300  elapsed=2.1min
+  [epoch 3] batch 150/1363 ( 11.0%)  loss=0.5177  elapsed=3.2min
+  [epoch 3] batch 200/1363 ( 14.7%)  loss=0.5254  elapsed=4.3min
+  [epoch 3] batch 250/1363 ( 18.3%)  loss=0.5233  elapsed=5.3min
+  [epoch 3] batch 300/1363 ( 22.0%)  loss=0.5208  elapsed=6.4min
+  [epoch 3] batch 350/1363 ( 25.7%)  loss=0.5219  elapsed=7.5min
+  [epoch 3] batch 400/1363 ( 29.3%)  loss=0.5147  elapsed=8.5min
+  [epoch 3] batch 450/1363 ( 33.0%)  loss=0.5170  elapsed=9.6min
+  [epoch 3] batch 500/1363 ( 36.7%)  loss=0.5188  elapsed=10.6min
+  [epoch 3] batch 550/1363 ( 40.4%)  loss=0.5182  elapsed=11.7min
+  [epoch 3] batch 600/1363 ( 44.0%)  loss=0.5158  elapsed=12.7min
+  [epoch 3] batch 650/1363 ( 47.7%)  loss=0.5153  elapsed=13.7min
+  [epoch 3] batch 700/1363 ( 51.4%)  loss=0.5140  elapsed=14.8min
+  [epoch 3] batch 750/1363 ( 55.0%)  loss=0.5142  elapsed=15.8min
+  [epoch 3] batch 800/1363 ( 58.7%)  loss=0.5145  elapsed=16.9min
+  [epoch 3] batch 850/1363 ( 62.4%)  loss=0.5119  elapsed=17.9min
+  [epoch 3] batch 900/1363 ( 66.0%)  loss=0.5104  elapsed=19.0min
+  [epoch 3] batch 950/1363 ( 69.7%)  loss=0.5094  elapsed=20.0min
+  [epoch 3] batch 1000/1363 ( 73.4%)  loss=0.5089  elapsed=21.1min
+  [epoch 3] batch 1050/1363 ( 77.0%)  loss=0.5085  elapsed=22.1min
+  [epoch 3] batch 1100/1363 ( 80.7%)  loss=0.5084  elapsed=23.2min
+  [epoch 3] batch 1150/1363 ( 84.4%)  loss=0.5068  elapsed=23.9min
+  [epoch 3] batch 1200/1363 ( 88.0%)  loss=0.5066  elapsed=24.7min
+  [epoch 3] batch 1250/1363 ( 91.7%)  loss=0.5054  elapsed=25.4min
+  [epoch 3] batch 1300/1363 ( 95.4%)  loss=0.5052  elapsed=26.2min
+  [epoch 3] batch 1350/1363 ( 99.0%)  loss=0.5036  elapsed=27.0min
+  [epoch 3] batch 1363/1363 (100.0%)  loss=0.5036  elapsed=27.1min
+
+=== epoch 3/20  train=0.5036  val=0.4365  (28.5min)  <- best ===
+
+  [epoch 4] batch 50/1363 (  3.7%)  loss=0.4569  elapsed=0.8min
+  [epoch 4] batch 100/1363 (  7.3%)  loss=0.4646  elapsed=1.5min
+  [epoch 4] batch 150/1363 ( 11.0%)  loss=0.4810  elapsed=2.3min
+  [epoch 4] batch 200/1363 ( 14.7%)  loss=0.4799  elapsed=3.1min
+  [epoch 4] batch 250/1363 ( 18.3%)  loss=0.4885  elapsed=3.8min
+  [epoch 4] batch 300/1363 ( 22.0%)  loss=0.4885  elapsed=4.6min
+  [epoch 4] batch 350/1363 ( 25.7%)  loss=0.4896  elapsed=5.4min
+  [epoch 4] batch 400/1363 ( 29.3%)  loss=0.4859  elapsed=6.2min
+  [epoch 4] batch 450/1363 ( 33.0%)  loss=0.4860  elapsed=7.0min
+  [epoch 4] batch 500/1363 ( 36.7%)  loss=0.4862  elapsed=7.8min
+  [epoch 4] batch 550/1363 ( 40.4%)  loss=0.4851  elapsed=8.6min
+  [epoch 4] batch 600/1363 ( 44.0%)  loss=0.4839  elapsed=9.4min
+  [epoch 4] batch 650/1363 ( 47.7%)  loss=0.4815  elapsed=10.2min
+  [epoch 4] batch 700/1363 ( 51.4%)  loss=0.4797  elapsed=11.0min
+  [epoch 4] batch 750/1363 ( 55.0%)  loss=0.4785  elapsed=11.8min
+  [epoch 4] batch 800/1363 ( 58.7%)  loss=0.4772  elapsed=12.6min
+  [epoch 4] batch 850/1363 ( 62.4%)  loss=0.4780  elapsed=13.4min
+  [epoch 4] batch 900/1363 ( 66.0%)  loss=0.4774  elapsed=14.2min
+  [epoch 4] batch 950/1363 ( 69.7%)  loss=0.4781  elapsed=14.9min
+  [epoch 4] batch 1000/1363 ( 73.4%)  loss=0.4776  elapsed=15.6min
+  [epoch 4] batch 1050/1363 ( 77.0%)  loss=0.4765  elapsed=16.3min
+  [epoch 4] batch 1100/1363 ( 80.7%)  loss=0.4750  elapsed=17.0min
+  [epoch 4] batch 1150/1363 ( 84.4%)  loss=0.4746  elapsed=17.7min
+  [epoch 4] batch 1200/1363 ( 88.0%)  loss=0.4740  elapsed=18.4min
+  [epoch 4] batch 1250/1363 ( 91.7%)  loss=0.4724  elapsed=19.1min
+  [epoch 4] batch 1300/1363 ( 95.4%)  loss=0.4710  elapsed=19.9min
+  [epoch 4] batch 1350/1363 ( 99.0%)  loss=0.4696  elapsed=21.0min
+  [epoch 4] batch 1363/1363 (100.0%)  loss=0.4691  elapsed=21.2min
+
+=== epoch 4/20  train=0.4691  val=0.4180  (22.6min)  <- best ===
+
+  [epoch 5] batch 50/1363 (  3.7%)  loss=0.4491  elapsed=0.7min
+  [epoch 5] batch 100/1363 (  7.3%)  loss=0.4402  elapsed=1.5min
+  [epoch 5] batch 150/1363 ( 11.0%)  loss=0.4426  elapsed=2.2min
+  [epoch 5] batch 200/1363 ( 14.7%)  loss=0.4356  elapsed=3.0min
+  [epoch 5] batch 250/1363 ( 18.3%)  loss=0.4387  elapsed=3.7min
+  [epoch 5] batch 300/1363 ( 22.0%)  loss=0.4432  elapsed=4.4min
+  [epoch 5] batch 350/1363 ( 25.7%)  loss=0.4416  elapsed=5.1min
+  [epoch 5] batch 400/1363 ( 29.3%)  loss=0.4430  elapsed=5.9min
+  [epoch 5] batch 450/1363 ( 33.0%)  loss=0.4447  elapsed=6.6min
+  [epoch 5] batch 500/1363 ( 36.7%)  loss=0.4509  elapsed=7.3min
+  [epoch 5] batch 550/1363 ( 40.4%)  loss=0.4534  elapsed=8.0min
+  [epoch 5] batch 600/1363 ( 44.0%)  loss=0.4533  elapsed=8.7min
+  [epoch 5] batch 650/1363 ( 47.7%)  loss=0.4529  elapsed=9.4min
+  [epoch 5] batch 700/1363 ( 51.4%)  loss=0.4516  elapsed=10.2min
+  [epoch 5] batch 750/1363 ( 55.0%)  loss=0.4522  elapsed=10.9min
+  [epoch 5] batch 800/1363 ( 58.7%)  loss=0.4507  elapsed=11.6min
+  [epoch 5] batch 850/1363 ( 62.4%)  loss=0.4500  elapsed=12.3min
+  [epoch 5] batch 900/1363 ( 66.0%)  loss=0.4497  elapsed=13.0min
+  [epoch 5] batch 950/1363 ( 69.7%)  loss=0.4512  elapsed=13.8min
+  [epoch 5] batch 1000/1363 ( 73.4%)  loss=0.4500  elapsed=14.5min
+  [epoch 5] batch 1050/1363 ( 77.0%)  loss=0.4510  elapsed=15.2min
+  [epoch 5] batch 1100/1363 ( 80.7%)  loss=0.4493  elapsed=15.9min
+  [epoch 5] batch 1150/1363 ( 84.4%)  loss=0.4481  elapsed=16.6min
+  [epoch 5] batch 1200/1363 ( 88.0%)  loss=0.4480  elapsed=17.3min
+  [epoch 5] batch 1250/1363 ( 91.7%)  loss=0.4468  elapsed=18.1min
+  [epoch 5] batch 1300/1363 ( 95.4%)  loss=0.4454  elapsed=18.8min
+  [epoch 5] batch 1350/1363 ( 99.0%)  loss=0.4449  elapsed=19.5min
+  [epoch 5] batch 1363/1363 (100.0%)  loss=0.4449  elapsed=19.7min
+
+=== epoch 5/20  train=0.4449  val=0.4078  (21.0min)  <- best ===
+
+  [epoch 6] batch 50/1363 (  3.7%)  loss=0.4722  elapsed=0.7min
+  [epoch 6] batch 100/1363 (  7.3%)  loss=0.4547  elapsed=1.4min
+  [epoch 6] batch 150/1363 ( 11.0%)  loss=0.4523  elapsed=2.2min
+  [epoch 6] batch 200/1363 ( 14.7%)  loss=0.4453  elapsed=2.9min
+  [epoch 6] batch 250/1363 ( 18.3%)  loss=0.4441  elapsed=3.6min
+  [epoch 6] batch 300/1363 ( 22.0%)  loss=0.4447  elapsed=4.4min
+  [epoch 6] batch 350/1363 ( 25.7%)  loss=0.4445  elapsed=5.1min
+  [epoch 6] batch 400/1363 ( 29.3%)  loss=0.4420  elapsed=5.8min
+  [epoch 6] batch 450/1363 ( 33.0%)  loss=0.4377  elapsed=6.5min
+  [epoch 6] batch 500/1363 ( 36.7%)  loss=0.4356  elapsed=7.2min
+  [epoch 6] batch 550/1363 ( 40.4%)  loss=0.4387  elapsed=8.0min
+  [epoch 6] batch 600/1363 ( 44.0%)  loss=0.4368  elapsed=8.7min
+  [epoch 6] batch 650/1363 ( 47.7%)  loss=0.4340  elapsed=9.4min
+  [epoch 6] batch 700/1363 ( 51.4%)  loss=0.4316  elapsed=10.1min
+  [epoch 6] batch 750/1363 ( 55.0%)  loss=0.4303  elapsed=10.9min
+  [epoch 6] batch 800/1363 ( 58.7%)  loss=0.4296  elapsed=11.6min
+  [epoch 6] batch 850/1363 ( 62.4%)  loss=0.4289  elapsed=12.3min
+  [epoch 6] batch 900/1363 ( 66.0%)  loss=0.4286  elapsed=13.1min
+  [epoch 6] batch 950/1363 ( 69.7%)  loss=0.4284  elapsed=13.8min
+  [epoch 6] batch 1000/1363 ( 73.4%)  loss=0.4281  elapsed=14.5min
+  [epoch 6] batch 1050/1363 ( 77.0%)  loss=0.4275  elapsed=15.2min
+  [epoch 6] batch 1100/1363 ( 80.7%)  loss=0.4262  elapsed=16.0min
+  [epoch 6] batch 1150/1363 ( 84.4%)  loss=0.4248  elapsed=16.7min
+  [epoch 6] batch 1200/1363 ( 88.0%)  loss=0.4241  elapsed=17.4min
+  [epoch 6] batch 1250/1363 ( 91.7%)  loss=0.4227  elapsed=18.1min
+  [epoch 6] batch 1300/1363 ( 95.4%)  loss=0.4242  elapsed=18.9min
+  [epoch 6] batch 1350/1363 ( 99.0%)  loss=0.4239  elapsed=19.6min
+  [epoch 6] batch 1363/1363 (100.0%)  loss=0.4238  elapsed=19.8min
+
+=== epoch 6/20  train=0.4238  val=0.3990  (21.2min)  <- best ===
+
+  [epoch 7] batch 50/1363 (  3.7%)  loss=0.3948  elapsed=0.7min
+  [epoch 7] batch 100/1363 (  7.3%)  loss=0.3996  elapsed=1.5min
+  [epoch 7] batch 150/1363 ( 11.0%)  loss=0.4028  elapsed=2.2min
+  [epoch 7] batch 200/1363 ( 14.7%)  loss=0.4062  elapsed=2.9min
+  [epoch 7] batch 250/1363 ( 18.3%)  loss=0.4032  elapsed=3.6min
+  [epoch 7] batch 300/1363 ( 22.0%)  loss=0.4055  elapsed=4.4min
+  [epoch 7] batch 350/1363 ( 25.7%)  loss=0.4076  elapsed=5.1min
+  [epoch 7] batch 400/1363 ( 29.3%)  loss=0.4054  elapsed=5.8min
+  [epoch 7] batch 450/1363 ( 33.0%)  loss=0.4068  elapsed=6.6min
+  [epoch 7] batch 500/1363 ( 36.7%)  loss=0.4066  elapsed=7.3min
+  [epoch 7] batch 550/1363 ( 40.4%)  loss=0.4066  elapsed=8.0min
+  [epoch 7] batch 600/1363 ( 44.0%)  loss=0.4073  elapsed=8.8min
+  [epoch 7] batch 650/1363 ( 47.7%)  loss=0.4086  elapsed=9.5min
+  [epoch 7] batch 700/1363 ( 51.4%)  loss=0.4081  elapsed=10.2min
+  [epoch 7] batch 750/1363 ( 55.0%)  loss=0.4070  elapsed=11.0min
+  [epoch 7] batch 800/1363 ( 58.7%)  loss=0.4081  elapsed=11.7min
+  [epoch 7] batch 850/1363 ( 62.4%)  loss=0.4067  elapsed=12.4min
+  [epoch 7] batch 900/1363 ( 66.0%)  loss=0.4069  elapsed=13.2min
+  [epoch 7] batch 950/1363 ( 69.7%)  loss=0.4063  elapsed=13.9min
+  [epoch 7] batch 1000/1363 ( 73.4%)  loss=0.4061  elapsed=14.6min
+  [epoch 7] batch 1050/1363 ( 77.0%)  loss=0.4059  elapsed=15.4min
+  [epoch 7] batch 1100/1363 ( 80.7%)  loss=0.4052  elapsed=16.1min
+  [epoch 7] batch 1150/1363 ( 84.4%)  loss=0.4056  elapsed=16.8min
+  [epoch 7] batch 1200/1363 ( 88.0%)  loss=0.4060  elapsed=17.6min
+  [epoch 7] batch 1250/1363 ( 91.7%)  loss=0.4052  elapsed=18.3min
+  [epoch 7] batch 1300/1363 ( 95.4%)  loss=0.4047  elapsed=19.0min
+  [epoch 7] batch 1350/1363 ( 99.0%)  loss=0.4040  elapsed=19.8min
+  [epoch 7] batch 1363/1363 (100.0%)  loss=0.4041  elapsed=20.0min
+
+=== epoch 7/20  train=0.4041  val=0.3968  (21.4min)  <- best ===
+
+  [epoch 8] batch 50/1363 (  3.7%)  loss=0.4192  elapsed=0.7min
+  [epoch 8] batch 100/1363 (  7.3%)  loss=0.4154  elapsed=1.5min
+  [epoch 8] batch 150/1363 ( 11.0%)  loss=0.4064  elapsed=2.2min
+  [epoch 8] batch 200/1363 ( 14.7%)  loss=0.3955  elapsed=3.0min
+  [epoch 8] batch 250/1363 ( 18.3%)  loss=0.3902  elapsed=3.7min
+  [epoch 8] batch 300/1363 ( 22.0%)  loss=0.3913  elapsed=4.4min
+  [epoch 8] batch 350/1363 ( 25.7%)  loss=0.3924  elapsed=5.2min
+  [epoch 8] batch 400/1363 ( 29.3%)  loss=0.3937  elapsed=5.9min
+  [epoch 8] batch 450/1363 ( 33.0%)  loss=0.3921  elapsed=6.7min
+  [epoch 8] batch 500/1363 ( 36.7%)  loss=0.3914  elapsed=7.5min
+  [epoch 8] batch 550/1363 ( 40.4%)  loss=0.3906  elapsed=8.4min
+  [epoch 8] batch 600/1363 ( 44.0%)  loss=0.3894  elapsed=9.2min
+  [epoch 8] batch 650/1363 ( 47.7%)  loss=0.3906  elapsed=10.1min
+  [epoch 8] batch 700/1363 ( 51.4%)  loss=0.3913  elapsed=10.9min
+  [epoch 8] batch 750/1363 ( 55.0%)  loss=0.3921  elapsed=11.8min
+  [epoch 8] batch 800/1363 ( 58.7%)  loss=0.3920  elapsed=12.6min
+  [epoch 8] batch 850/1363 ( 62.4%)  loss=0.3919  elapsed=13.5min
+  [epoch 8] batch 900/1363 ( 66.0%)  loss=0.3937  elapsed=14.3min
+  [epoch 8] batch 950/1363 ( 69.7%)  loss=0.3941  elapsed=15.2min
+  [epoch 8] batch 1000/1363 ( 73.4%)  loss=0.3947  elapsed=16.0min
+  [epoch 8] batch 1050/1363 ( 77.0%)  loss=0.3956  elapsed=16.9min
+  [epoch 8] batch 1100/1363 ( 80.7%)  loss=0.3964  elapsed=17.7min
+  [epoch 8] batch 1150/1363 ( 84.4%)  loss=0.3940  elapsed=18.6min
+  [epoch 8] batch 1200/1363 ( 88.0%)  loss=0.3925  elapsed=19.4min
+  [epoch 8] batch 1250/1363 ( 91.7%)  loss=0.3925  elapsed=20.3min
+  [epoch 8] batch 1300/1363 ( 95.4%)  loss=0.3913  elapsed=21.1min
+  [epoch 8] batch 1350/1363 ( 99.0%)  loss=0.3910  elapsed=22.0min
+  [epoch 8] batch 1363/1363 (100.0%)  loss=0.3906  elapsed=22.2min
+
+=== epoch 8/20  train=0.3906  val=0.3552  (24.3min)  <- best ===
+
+  [epoch 9] batch 50/1363 (  3.7%)  loss=0.3977  elapsed=0.8min
+  [epoch 9] batch 100/1363 (  7.3%)  loss=0.3894  elapsed=1.5min
+  [epoch 9] batch 150/1363 ( 11.0%)  loss=0.4021  elapsed=2.3min
+  [epoch 9] batch 200/1363 ( 14.7%)  loss=0.3947  elapsed=3.1min
+  [epoch 9] batch 250/1363 ( 18.3%)  loss=0.3860  elapsed=3.8min
+  [epoch 9] batch 300/1363 ( 22.0%)  loss=0.3861  elapsed=4.6min
+  [epoch 9] batch 350/1363 ( 25.7%)  loss=0.3860  elapsed=5.4min
+  [epoch 9] batch 400/1363 ( 29.3%)  loss=0.3855  elapsed=6.2min
+  [epoch 9] batch 450/1363 ( 33.0%)  loss=0.3836  elapsed=6.9min
+  [epoch 9] batch 500/1363 ( 36.7%)  loss=0.3808  elapsed=7.7min
+  [epoch 9] batch 550/1363 ( 40.4%)  loss=0.3821  elapsed=8.5min
+  [epoch 9] batch 600/1363 ( 44.0%)  loss=0.3810  elapsed=9.3min
+  [epoch 9] batch 650/1363 ( 47.7%)  loss=0.3821  elapsed=10.1min
+  [epoch 9] batch 700/1363 ( 51.4%)  loss=0.3811  elapsed=10.8min
+  [epoch 9] batch 750/1363 ( 55.0%)  loss=0.3809  elapsed=11.6min
+  [epoch 9] batch 800/1363 ( 58.7%)  loss=0.3816  elapsed=12.4min
+  [epoch 9] batch 850/1363 ( 62.4%)  loss=0.3808  elapsed=13.2min
+  [epoch 9] batch 900/1363 ( 66.0%)  loss=0.3821  elapsed=14.0min
+  [epoch 9] batch 950/1363 ( 69.7%)  loss=0.3814  elapsed=14.8min
+  [epoch 9] batch 1000/1363 ( 73.4%)  loss=0.3803  elapsed=15.6min
+  [epoch 9] batch 1050/1363 ( 77.0%)  loss=0.3786  elapsed=16.4min
+  [epoch 9] batch 1100/1363 ( 80.7%)  loss=0.3776  elapsed=17.2min
+  [epoch 9] batch 1150/1363 ( 84.4%)  loss=0.3779  elapsed=17.9min
+  [epoch 9] batch 1200/1363 ( 88.0%)  loss=0.3782  elapsed=18.7min
+  [epoch 9] batch 1250/1363 ( 91.7%)  loss=0.3780  elapsed=19.5min
+  [epoch 9] batch 1300/1363 ( 95.4%)  loss=0.3778  elapsed=20.2min
+  [epoch 9] batch 1350/1363 ( 99.0%)  loss=0.3768  elapsed=21.0min
+  [epoch 9] batch 1363/1363 (100.0%)  loss=0.3767  elapsed=21.2min
+
+=== epoch 9/20  train=0.3767  val=0.3388  (22.7min)  <- best ===
+
+  [epoch 10] batch 50/1363 (  3.7%)  loss=0.3189  elapsed=0.7min
+  [epoch 10] batch 100/1363 (  7.3%)  loss=0.3513  elapsed=1.3min
+  [epoch 10] batch 150/1363 ( 11.0%)  loss=0.3555  elapsed=1.9min
+  [epoch 10] batch 200/1363 ( 14.7%)  loss=0.3625  elapsed=2.6min
+  [epoch 10] batch 250/1363 ( 18.3%)  loss=0.3660  elapsed=3.2min
+  [epoch 10] batch 300/1363 ( 22.0%)  loss=0.3653  elapsed=3.8min
+  [epoch 10] batch 350/1363 ( 25.7%)  loss=0.3640  elapsed=4.5min
+  [epoch 10] batch 400/1363 ( 29.3%)  loss=0.3615  elapsed=5.2min
+  [epoch 10] batch 450/1363 ( 33.0%)  loss=0.3615  elapsed=5.8min
+  [epoch 10] batch 500/1363 ( 36.7%)  loss=0.3585  elapsed=6.5min
+  [epoch 10] batch 550/1363 ( 40.4%)  loss=0.3614  elapsed=7.1min
+  [epoch 10] batch 600/1363 ( 44.0%)  loss=0.3616  elapsed=7.8min
+  [epoch 10] batch 650/1363 ( 47.7%)  loss=0.3604  elapsed=8.5min
+  [epoch 10] batch 700/1363 ( 51.4%)  loss=0.3638  elapsed=9.1min
+  [epoch 10] batch 750/1363 ( 55.0%)  loss=0.3632  elapsed=9.8min
+  [epoch 10] batch 800/1363 ( 58.7%)  loss=0.3626  elapsed=10.5min
+  [epoch 10] batch 850/1363 ( 62.4%)  loss=0.3640  elapsed=11.2min
+  [epoch 10] batch 900/1363 ( 66.0%)  loss=0.3649  elapsed=11.9min
+  [epoch 10] batch 950/1363 ( 69.7%)  loss=0.3646  elapsed=12.5min
+  [epoch 10] batch 1000/1363 ( 73.4%)  loss=0.3638  elapsed=13.2min
+  [epoch 10] batch 1050/1363 ( 77.0%)  loss=0.3638  elapsed=13.9min
+  [epoch 10] batch 1100/1363 ( 80.7%)  loss=0.3639  elapsed=14.5min
+  [epoch 10] batch 1150/1363 ( 84.4%)  loss=0.3632  elapsed=15.2min
+  [epoch 10] batch 1200/1363 ( 88.0%)  loss=0.3626  elapsed=15.9min
+  [epoch 10] batch 1250/1363 ( 91.7%)  loss=0.3642  elapsed=16.6min
+  [epoch 10] batch 1300/1363 ( 95.4%)  loss=0.3646  elapsed=17.3min
+  [epoch 10] batch 1350/1363 ( 99.0%)  loss=0.3634  elapsed=17.9min
+  [epoch 10] batch 1363/1363 (100.0%)  loss=0.3636  elapsed=18.1min
+
+=== epoch 10/20  train=0.3636  val=0.3323  (19.3min)  <- best ===
+
+  [epoch 11] batch 50/1363 (  3.7%)  loss=0.3525  elapsed=0.7min
+  [epoch 11] batch 100/1363 (  7.3%)  loss=0.3534  elapsed=1.3min
+  [epoch 11] batch 150/1363 ( 11.0%)  loss=0.3453  elapsed=2.0min
+  [epoch 11] batch 200/1363 ( 14.7%)  loss=0.3403  elapsed=2.7min
+  [epoch 11] batch 250/1363 ( 18.3%)  loss=0.3432  elapsed=3.4min
+  [epoch 11] batch 300/1363 ( 22.0%)  loss=0.3432  elapsed=4.0min
+  [epoch 11] batch 350/1363 ( 25.7%)  loss=0.3433  elapsed=4.7min
+  [epoch 11] batch 400/1363 ( 29.3%)  loss=0.3411  elapsed=5.4min
+  [epoch 11] batch 450/1363 ( 33.0%)  loss=0.3462  elapsed=6.0min
+  [epoch 11] batch 500/1363 ( 36.7%)  loss=0.3460  elapsed=6.6min
+  [epoch 11] batch 550/1363 ( 40.4%)  loss=0.3480  elapsed=7.3min
+  [epoch 11] batch 600/1363 ( 44.0%)  loss=0.3497  elapsed=7.9min
+  [epoch 11] batch 650/1363 ( 47.7%)  loss=0.3484  elapsed=8.5min
+  [epoch 11] batch 700/1363 ( 51.4%)  loss=0.3484  elapsed=9.2min
+  [epoch 11] batch 750/1363 ( 55.0%)  loss=0.3506  elapsed=9.8min
+  [epoch 11] batch 800/1363 ( 58.7%)  loss=0.3499  elapsed=10.5min
+  [epoch 11] batch 850/1363 ( 62.4%)  loss=0.3519  elapsed=11.1min
+  [epoch 11] batch 900/1363 ( 66.0%)  loss=0.3503  elapsed=11.7min
+  [epoch 11] batch 950/1363 ( 69.7%)  loss=0.3508  elapsed=12.4min
+  [epoch 11] batch 1000/1363 ( 73.4%)  loss=0.3493  elapsed=13.0min
+  [epoch 11] batch 1050/1363 ( 77.0%)  loss=0.3499  elapsed=13.6min
+  [epoch 11] batch 1100/1363 ( 80.7%)  loss=0.3514  elapsed=14.3min
+  [epoch 11] batch 1150/1363 ( 84.4%)  loss=0.3512  elapsed=14.9min
+  [epoch 11] batch 1200/1363 ( 88.0%)  loss=0.3509  elapsed=15.6min
+  [epoch 11] batch 1250/1363 ( 91.7%)  loss=0.3508  elapsed=16.2min
+  [epoch 11] batch 1300/1363 ( 95.4%)  loss=0.3524  elapsed=16.9min
+  [epoch 11] batch 1350/1363 ( 99.0%)  loss=0.3512  elapsed=17.5min
+  [epoch 11] batch 1363/1363 (100.0%)  loss=0.3513  elapsed=17.7min
+
+=== epoch 11/20  train=0.3513  val=0.3243  (18.8min)  <- best ===
+
+  [epoch 12] batch 50/1363 (  3.7%)  loss=0.3508  elapsed=0.7min
+  [epoch 12] batch 100/1363 (  7.3%)  loss=0.3380  elapsed=1.3min
+  [epoch 12] batch 150/1363 ( 11.0%)  loss=0.3281  elapsed=1.9min
+  [epoch 12] batch 200/1363 ( 14.7%)  loss=0.3277  elapsed=2.5min
+  [epoch 12] batch 250/1363 ( 18.3%)  loss=0.3320  elapsed=3.3min
+  [epoch 12] batch 300/1363 ( 22.0%)  loss=0.3380  elapsed=4.0min
+  [epoch 12] batch 350/1363 ( 25.7%)  loss=0.3391  elapsed=4.8min
+  [epoch 12] batch 400/1363 ( 29.3%)  loss=0.3393  elapsed=5.4min
+  [epoch 12] batch 450/1363 ( 33.0%)  loss=0.3414  elapsed=6.0min
+  [epoch 12] batch 500/1363 ( 36.7%)  loss=0.3433  elapsed=6.6min
+  [epoch 12] batch 550/1363 ( 40.4%)  loss=0.3436  elapsed=7.2min
+  [epoch 12] batch 600/1363 ( 44.0%)  loss=0.3448  elapsed=7.9min
+  [epoch 12] batch 650/1363 ( 47.7%)  loss=0.3435  elapsed=8.7min
+  [epoch 12] batch 700/1363 ( 51.4%)  loss=0.3427  elapsed=9.4min
+  [epoch 12] batch 750/1363 ( 55.0%)  loss=0.3425  elapsed=10.1min
+  [epoch 12] batch 800/1363 ( 58.7%)  loss=0.3428  elapsed=10.9min
+  [epoch 12] batch 850/1363 ( 62.4%)  loss=0.3409  elapsed=11.5min
+  [epoch 12] batch 900/1363 ( 66.0%)  loss=0.3397  elapsed=12.2min
+  [epoch 12] batch 950/1363 ( 69.7%)  loss=0.3391  elapsed=12.9min
+  [epoch 12] batch 1000/1363 ( 73.4%)  loss=0.3400  elapsed=13.6min
+  [epoch 12] batch 1050/1363 ( 77.0%)  loss=0.3409  elapsed=14.4min
+  [epoch 12] batch 1100/1363 ( 80.7%)  loss=0.3428  elapsed=15.1min
+  [epoch 12] batch 1150/1363 ( 84.4%)  loss=0.3417  elapsed=15.8min
+  [epoch 12] batch 1200/1363 ( 88.0%)  loss=0.3416  elapsed=16.6min
+  [epoch 12] batch 1250/1363 ( 91.7%)  loss=0.3417  elapsed=17.3min
+  [epoch 12] batch 1300/1363 ( 95.4%)  loss=0.3429  elapsed=18.0min
+  [epoch 12] batch 1350/1363 ( 99.0%)  loss=0.3433  elapsed=18.8min
+  [epoch 12] batch 1363/1363 (100.0%)  loss=0.3433  elapsed=19.0min
+
+=== epoch 12/20  train=0.3433  val=0.3115  (20.2min)  <- best ===
+
+  [epoch 13] batch 50/1363 (  3.7%)  loss=0.3404  elapsed=0.7min
+  [epoch 13] batch 100/1363 (  7.3%)  loss=0.3380  elapsed=1.5min
+  [epoch 13] batch 150/1363 ( 11.0%)  loss=0.3386  elapsed=2.3min
+  [epoch 13] batch 200/1363 ( 14.7%)  loss=0.3331  elapsed=3.0min
+  [epoch 13] batch 250/1363 ( 18.3%)  loss=0.3361  elapsed=3.7min
+  [epoch 13] batch 300/1363 ( 22.0%)  loss=0.3422  elapsed=4.5min
+  [epoch 13] batch 350/1363 ( 25.7%)  loss=0.3429  elapsed=5.2min
+  [epoch 13] batch 400/1363 ( 29.3%)  loss=0.3423  elapsed=6.0min
+  [epoch 13] batch 450/1363 ( 33.0%)  loss=0.3430  elapsed=6.7min
+  [epoch 13] batch 500/1363 ( 36.7%)  loss=0.3406  elapsed=7.5min
+  [epoch 13] batch 550/1363 ( 40.4%)  loss=0.3388  elapsed=8.2min
+  [epoch 13] batch 600/1363 ( 44.0%)  loss=0.3350  elapsed=9.0min
+  [epoch 13] batch 650/1363 ( 47.7%)  loss=0.3337  elapsed=9.7min
+  [epoch 13] batch 700/1363 ( 51.4%)  loss=0.3314  elapsed=10.5min
+  [epoch 13] batch 750/1363 ( 55.0%)  loss=0.3296  elapsed=11.2min
+  [epoch 13] batch 800/1363 ( 58.7%)  loss=0.3297  elapsed=12.0min
+  [epoch 13] batch 850/1363 ( 62.4%)  loss=0.3313  elapsed=12.7min
+  [epoch 13] batch 900/1363 ( 66.0%)  loss=0.3348  elapsed=13.5min
+  [epoch 13] batch 950/1363 ( 69.7%)  loss=0.3363  elapsed=14.2min
+  [epoch 13] batch 1000/1363 ( 73.4%)  loss=0.3354  elapsed=15.0min
+  [epoch 13] batch 1050/1363 ( 77.0%)  loss=0.3359  elapsed=15.8min
+  [epoch 13] batch 1100/1363 ( 80.7%)  loss=0.3359  elapsed=16.5min
+  [epoch 13] batch 1150/1363 ( 84.4%)  loss=0.3357  elapsed=17.3min
+  [epoch 13] batch 1200/1363 ( 88.0%)  loss=0.3353  elapsed=18.0min
+  [epoch 13] batch 1250/1363 ( 91.7%)  loss=0.3354  elapsed=18.8min
+  [epoch 13] batch 1300/1363 ( 95.4%)  loss=0.3351  elapsed=19.5min
+  [epoch 13] batch 1350/1363 ( 99.0%)  loss=0.3354  elapsed=20.3min
+  [epoch 13] batch 1363/1363 (100.0%)  loss=0.3359  elapsed=20.4min
+
+=== epoch 13/20  train=0.3359  val=0.3277  (21.9min) ===
+
+  [epoch 14] batch 50/1363 (  3.7%)  loss=0.3296  elapsed=0.8min
+  [epoch 14] batch 100/1363 (  7.3%)  loss=0.3347  elapsed=1.5min
+  [epoch 14] batch 150/1363 ( 11.0%)  loss=0.3333  elapsed=2.3min
+  [epoch 14] batch 200/1363 ( 14.7%)  loss=0.3252  elapsed=3.1min
+  [epoch 14] batch 250/1363 ( 18.3%)  loss=0.3302  elapsed=3.8min
+  [epoch 14] batch 300/1363 ( 22.0%)  loss=0.3291  elapsed=4.6min
+  [epoch 14] batch 350/1363 ( 25.7%)  loss=0.3250  elapsed=5.3min
+  [epoch 14] batch 400/1363 ( 29.3%)  loss=0.3257  elapsed=6.1min
+  [epoch 14] batch 450/1363 ( 33.0%)  loss=0.3290  elapsed=6.8min
+  [epoch 14] batch 500/1363 ( 36.7%)  loss=0.3302  elapsed=7.6min
+  [epoch 14] batch 550/1363 ( 40.4%)  loss=0.3304  elapsed=8.4min
+  [epoch 14] batch 600/1363 ( 44.0%)  loss=0.3311  elapsed=9.0min
+  [epoch 14] batch 650/1363 ( 47.7%)  loss=0.3319  elapsed=9.7min
+  [epoch 14] batch 700/1363 ( 51.4%)  loss=0.3332  elapsed=10.3min
+  [epoch 14] batch 750/1363 ( 55.0%)  loss=0.3330  elapsed=10.9min
+  [epoch 14] batch 800/1363 ( 58.7%)  loss=0.3334  elapsed=11.6min
+  [epoch 14] batch 850/1363 ( 62.4%)  loss=0.3334  elapsed=12.2min
+  [epoch 14] batch 900/1363 ( 66.0%)  loss=0.3329  elapsed=12.9min
+  [epoch 14] batch 950/1363 ( 69.7%)  loss=0.3331  elapsed=13.7min
+  [epoch 14] batch 1000/1363 ( 73.4%)  loss=0.3325  elapsed=14.4min
+  [epoch 14] batch 1050/1363 ( 77.0%)  loss=0.3313  elapsed=15.2min
+  [epoch 14] batch 1100/1363 ( 80.7%)  loss=0.3311  elapsed=15.9min
+  [epoch 14] batch 1150/1363 ( 84.4%)  loss=0.3309  elapsed=16.6min
+  [epoch 14] batch 1200/1363 ( 88.0%)  loss=0.3310  elapsed=17.3min
+  [epoch 14] batch 1250/1363 ( 91.7%)  loss=0.3309  elapsed=17.9min
+  [epoch 14] batch 1300/1363 ( 95.4%)  loss=0.3310  elapsed=18.6min
+  [epoch 14] batch 1350/1363 ( 99.0%)  loss=0.3305  elapsed=19.2min
+  [epoch 14] batch 1363/1363 (100.0%)  loss=0.3304  elapsed=19.4min
+
+=== epoch 14/20  train=0.3304  val=0.3466  (20.6min) ===
+
+  [epoch 15] batch 50/1363 (  3.7%)  loss=0.3240  elapsed=0.6min
+  [epoch 15] batch 100/1363 (  7.3%)  loss=0.3204  elapsed=1.2min
+  [epoch 15] batch 150/1363 ( 11.0%)  loss=0.3222  elapsed=1.9min
+  [epoch 15] batch 200/1363 ( 14.7%)  loss=0.3198  elapsed=2.5min
+  [epoch 15] batch 250/1363 ( 18.3%)  loss=0.3164  elapsed=3.1min
+  [epoch 15] batch 300/1363 ( 22.0%)  loss=0.3192  elapsed=3.7min
+  [epoch 15] batch 350/1363 ( 25.7%)  loss=0.3183  elapsed=4.3min
+  [epoch 15] batch 400/1363 ( 29.3%)  loss=0.3194  elapsed=4.9min
+  [epoch 15] batch 450/1363 ( 33.0%)  loss=0.3202  elapsed=5.6min
+  [epoch 15] batch 500/1363 ( 36.7%)  loss=0.3204  elapsed=6.2min
+  [epoch 15] batch 550/1363 ( 40.4%)  loss=0.3220  elapsed=6.8min
+  [epoch 15] batch 600/1363 ( 44.0%)  loss=0.3240  elapsed=7.5min
+  [epoch 15] batch 650/1363 ( 47.7%)  loss=0.3226  elapsed=8.1min
+  [epoch 15] batch 700/1363 ( 51.4%)  loss=0.3213  elapsed=8.7min
+  [epoch 15] batch 750/1363 ( 55.0%)  loss=0.3226  elapsed=9.3min
+  [epoch 15] batch 800/1363 ( 58.7%)  loss=0.3244  elapsed=9.9min
+  [epoch 15] batch 850/1363 ( 62.4%)  loss=0.3245  elapsed=10.6min
+  [epoch 15] batch 900/1363 ( 66.0%)  loss=0.3242  elapsed=11.2min
+  [epoch 15] batch 950/1363 ( 69.7%)  loss=0.3229  elapsed=11.8min
+  [epoch 15] batch 1000/1363 ( 73.4%)  loss=0.3221  elapsed=12.5min
+  [epoch 15] batch 1050/1363 ( 77.0%)  loss=0.3221  elapsed=13.2min
+  [epoch 15] batch 1100/1363 ( 80.7%)  loss=0.3234  elapsed=13.9min
+  [epoch 15] batch 1150/1363 ( 84.4%)  loss=0.3246  elapsed=14.6min
+  [epoch 15] batch 1200/1363 ( 88.0%)  loss=0.3247  elapsed=15.3min
+  [epoch 15] batch 1250/1363 ( 91.7%)  loss=0.3259  elapsed=16.0min
+  [epoch 15] batch 1300/1363 ( 95.4%)  loss=0.3255  elapsed=16.7min
+  [epoch 15] batch 1350/1363 ( 99.0%)  loss=0.3253  elapsed=17.4min
+  [epoch 15] batch 1363/1363 (100.0%)  loss=0.3250  elapsed=17.6min
+
+=== epoch 15/20  train=0.3250  val=0.3058  (18.9min)  <- best ===
+
+  [epoch 16] batch 50/1363 (  3.7%)  loss=0.2999  elapsed=0.7min
+  [epoch 16] batch 100/1363 (  7.3%)  loss=0.3099  elapsed=1.4min
+  [epoch 16] batch 150/1363 ( 11.0%)  loss=0.3091  elapsed=2.1min
+  [epoch 16] batch 200/1363 ( 14.7%)  loss=0.3144  elapsed=2.8min
+  [epoch 16] batch 250/1363 ( 18.3%)  loss=0.3154  elapsed=3.5min
+  [epoch 16] batch 300/1363 ( 22.0%)  loss=0.3155  elapsed=4.3min
+  [epoch 16] batch 350/1363 ( 25.7%)  loss=0.3173  elapsed=5.0min
+  [epoch 16] batch 400/1363 ( 29.3%)  loss=0.3159  elapsed=5.7min
+  [epoch 16] batch 450/1363 ( 33.0%)  loss=0.3148  elapsed=6.5min
+  [epoch 16] batch 500/1363 ( 36.7%)  loss=0.3121  elapsed=7.2min
+  [epoch 16] batch 550/1363 ( 40.4%)  loss=0.3106  elapsed=7.9min
+  [epoch 16] batch 600/1363 ( 44.0%)  loss=0.3100  elapsed=8.7min
+  [epoch 16] batch 650/1363 ( 47.7%)  loss=0.3116  elapsed=9.4min
+  [epoch 16] batch 700/1363 ( 51.4%)  loss=0.3118  elapsed=10.2min
+  [epoch 16] batch 750/1363 ( 55.0%)  loss=0.3102  elapsed=10.9min
+  [epoch 16] batch 800/1363 ( 58.7%)  loss=0.3102  elapsed=11.8min
+  [epoch 16] batch 850/1363 ( 62.4%)  loss=0.3114  elapsed=12.6min
+  [epoch 16] batch 900/1363 ( 66.0%)  loss=0.3113  elapsed=13.4min
+  [epoch 16] batch 950/1363 ( 69.7%)  loss=0.3117  elapsed=14.1min
+  [epoch 16] batch 1000/1363 ( 73.4%)  loss=0.3131  elapsed=14.7min
+  [epoch 16] batch 1050/1363 ( 77.0%)  loss=0.3125  elapsed=15.6min
+  [epoch 16] batch 1100/1363 ( 80.7%)  loss=0.3143  elapsed=16.4min
+  [epoch 16] batch 1150/1363 ( 84.4%)  loss=0.3146  elapsed=17.2min
+  [epoch 16] batch 1200/1363 ( 88.0%)  loss=0.3132  elapsed=18.0min
+  [epoch 16] batch 1250/1363 ( 91.7%)  loss=0.3136  elapsed=18.7min
+  [epoch 16] batch 1300/1363 ( 95.4%)  loss=0.3136  elapsed=19.5min
+  [epoch 16] batch 1350/1363 ( 99.0%)  loss=0.3146  elapsed=20.7min
+  [epoch 16] batch 1363/1363 (100.0%)  loss=0.3144  elapsed=20.9min
+
+=== epoch 16/20  train=0.3144  val=0.3076  (22.9min) ===
+
+  [epoch 17] batch 50/1363 (  3.7%)  loss=0.3236  elapsed=1.1min
+  [epoch 17] batch 100/1363 (  7.3%)  loss=0.3124  elapsed=2.2min
+  [epoch 17] batch 150/1363 ( 11.0%)  loss=0.3107  elapsed=2.9min
+  [epoch 17] batch 200/1363 ( 14.7%)  loss=0.3173  elapsed=3.8min
+  [epoch 17] batch 250/1363 ( 18.3%)  loss=0.3140  elapsed=4.5min
+  [epoch 17] batch 300/1363 ( 22.0%)  loss=0.3128  elapsed=5.3min
+  [epoch 17] batch 350/1363 ( 25.7%)  loss=0.3117  elapsed=6.0min
+  [epoch 17] batch 400/1363 ( 29.3%)  loss=0.3111  elapsed=6.8min
+  [epoch 17] batch 450/1363 ( 33.0%)  loss=0.3121  elapsed=7.5min
+  [epoch 17] batch 500/1363 ( 36.7%)  loss=0.3142  elapsed=8.6min
+  [epoch 17] batch 550/1363 ( 40.4%)  loss=0.3150  elapsed=9.8min
+  [epoch 17] batch 600/1363 ( 44.0%)  loss=0.3161  elapsed=10.6min
+  [epoch 17] batch 650/1363 ( 47.7%)  loss=0.3179  elapsed=11.4min
+  [epoch 17] batch 700/1363 ( 51.4%)  loss=0.3183  elapsed=12.1min
+  [epoch 17] batch 750/1363 ( 55.0%)  loss=0.3171  elapsed=12.9min
+  [epoch 17] batch 800/1363 ( 58.7%)  loss=0.3180  elapsed=13.7min
+  [epoch 17] batch 850/1363 ( 62.4%)  loss=0.3187  elapsed=14.7min
+  [epoch 17] batch 900/1363 ( 66.0%)  loss=0.3183  elapsed=15.8min
+  [epoch 17] batch 950/1363 ( 69.7%)  loss=0.3171  elapsed=16.7min
+  [epoch 17] batch 1000/1363 ( 73.4%)  loss=0.3159  elapsed=17.5min
+  [epoch 17] batch 1050/1363 ( 77.0%)  loss=0.3158  elapsed=18.3min
+  [epoch 17] batch 1100/1363 ( 80.7%)  loss=0.3152  elapsed=19.0min
+  [epoch 17] batch 1150/1363 ( 84.4%)  loss=0.3148  elapsed=19.7min
+  [epoch 17] batch 1200/1363 ( 88.0%)  loss=0.3147  elapsed=20.6min
+  [epoch 17] batch 1250/1363 ( 91.7%)  loss=0.3140  elapsed=21.7min
+  [epoch 17] batch 1300/1363 ( 95.4%)  loss=0.3133  elapsed=22.8min
+  [epoch 17] batch 1350/1363 ( 99.0%)  loss=0.3128  elapsed=23.6min
+  [epoch 17] batch 1363/1363 (100.0%)  loss=0.3128  elapsed=23.8min
+
+=== epoch 17/20  train=0.3128  val=0.3025  (25.2min)  <- best ===
+
+  [epoch 18] batch 50/1363 (  3.7%)  loss=0.2688  elapsed=0.8min
+  [epoch 18] batch 100/1363 (  7.3%)  loss=0.2884  elapsed=1.6min
+  [epoch 18] batch 150/1363 ( 11.0%)  loss=0.3090  elapsed=2.3min
+  [epoch 18] batch 200/1363 ( 14.7%)  loss=0.3104  elapsed=3.1min
+  [epoch 18] batch 250/1363 ( 18.3%)  loss=0.3080  elapsed=3.9min
+  [epoch 18] batch 300/1363 ( 22.0%)  loss=0.3101  elapsed=4.7min
+  [epoch 18] batch 350/1363 ( 25.7%)  loss=0.3083  elapsed=5.5min
+  [epoch 18] batch 400/1363 ( 29.3%)  loss=0.3100  elapsed=6.2min
+  [epoch 18] batch 450/1363 ( 33.0%)  loss=0.3086  elapsed=7.2min
+  [epoch 18] batch 500/1363 ( 36.7%)  loss=0.3064  elapsed=8.4min
+  [epoch 18] batch 550/1363 ( 40.4%)  loss=0.3034  elapsed=9.6min
+  [epoch 18] batch 600/1363 ( 44.0%)  loss=0.3028  elapsed=10.6min
+  [epoch 18] batch 650/1363 ( 47.7%)  loss=0.3025  elapsed=11.2min
+  [epoch 18] batch 700/1363 ( 51.4%)  loss=0.3022  elapsed=11.9min
+  [epoch 18] batch 750/1363 ( 55.0%)  loss=0.3032  elapsed=12.7min
+  [epoch 18] batch 800/1363 ( 58.7%)  loss=0.3048  elapsed=13.4min
+  [epoch 18] batch 850/1363 ( 62.4%)  loss=0.3044  elapsed=14.2min
+  [epoch 18] batch 900/1363 ( 66.0%)  loss=0.3072  elapsed=15.0min
+  [epoch 18] batch 950/1363 ( 69.7%)  loss=0.3074  elapsed=15.8min
+  [epoch 18] batch 1000/1363 ( 73.4%)  loss=0.3063  elapsed=16.6min
+  [epoch 18] batch 1050/1363 ( 77.0%)  loss=0.3054  elapsed=17.3min
+  [epoch 18] batch 1100/1363 ( 80.7%)  loss=0.3058  elapsed=18.1min
+  [epoch 18] batch 1150/1363 ( 84.4%)  loss=0.3056  elapsed=18.9min
+  [epoch 18] batch 1200/1363 ( 88.0%)  loss=0.3046  elapsed=19.7min
+  [epoch 18] batch 1250/1363 ( 91.7%)  loss=0.3046  elapsed=20.4min
+  [epoch 18] batch 1300/1363 ( 95.4%)  loss=0.3041  elapsed=21.0min
+  [epoch 18] batch 1350/1363 ( 99.0%)  loss=0.3050  elapsed=21.7min
+  [epoch 18] batch 1363/1363 (100.0%)  loss=0.3047  elapsed=21.8min
+
+=== epoch 18/20  train=0.3047  val=0.2919  (22.9min)  <- best ===
+
+  [epoch 19] batch 50/1363 (  3.7%)  loss=0.2772  elapsed=0.6min
+  [epoch 19] batch 100/1363 (  7.3%)  loss=0.2907  elapsed=1.2min
+  [epoch 19] batch 150/1363 ( 11.0%)  loss=0.2953  elapsed=1.9min
+  [epoch 19] batch 200/1363 ( 14.7%)  loss=0.2953  elapsed=2.5min
+  [epoch 19] batch 250/1363 ( 18.3%)  loss=0.2982  elapsed=3.1min
+  [epoch 19] batch 300/1363 ( 22.0%)  loss=0.2986  elapsed=3.7min
+  [epoch 19] batch 350/1363 ( 25.7%)  loss=0.2983  elapsed=4.4min
+  [epoch 19] batch 400/1363 ( 29.3%)  loss=0.2960  elapsed=5.0min
+  [epoch 19] batch 450/1363 ( 33.0%)  loss=0.2959  elapsed=5.6min
+  [epoch 19] batch 500/1363 ( 36.7%)  loss=0.2963  elapsed=6.2min
+  [epoch 19] batch 550/1363 ( 40.4%)  loss=0.2972  elapsed=6.9min
+  [epoch 19] batch 600/1363 ( 44.0%)  loss=0.2969  elapsed=7.5min
+  [epoch 19] batch 650/1363 ( 47.7%)  loss=0.2966  elapsed=8.1min
+  [epoch 19] batch 700/1363 ( 51.4%)  loss=0.2966  elapsed=8.7min
+  [epoch 19] batch 750/1363 ( 55.0%)  loss=0.2971  elapsed=9.3min
+  [epoch 19] batch 800/1363 ( 58.7%)  loss=0.2975  elapsed=10.0min
+  [epoch 19] batch 850/1363 ( 62.4%)  loss=0.2981  elapsed=10.6min
+  [epoch 19] batch 900/1363 ( 66.0%)  loss=0.2981  elapsed=11.2min
+  [epoch 19] batch 950/1363 ( 69.7%)  loss=0.2978  elapsed=11.8min
+  [epoch 19] batch 1000/1363 ( 73.4%)  loss=0.2990  elapsed=12.4min
+  [epoch 19] batch 1050/1363 ( 77.0%)  loss=0.3003  elapsed=13.1min
+  [epoch 19] batch 1100/1363 ( 80.7%)  loss=0.3015  elapsed=13.7min
+  [epoch 19] batch 1150/1363 ( 84.4%)  loss=0.3012  elapsed=14.3min
+  [epoch 19] batch 1200/1363 ( 88.0%)  loss=0.3000  elapsed=14.9min
+  [epoch 19] batch 1250/1363 ( 91.7%)  loss=0.2984  elapsed=15.6min
+  [epoch 19] batch 1300/1363 ( 95.4%)  loss=0.2979  elapsed=16.2min
+  [epoch 19] batch 1350/1363 ( 99.0%)  loss=0.2983  elapsed=16.8min
+  [epoch 19] batch 1363/1363 (100.0%)  loss=0.2986  elapsed=17.0min
+
+=== epoch 19/20  train=0.2986  val=0.2958  (18.2min) ===
+
+  [epoch 20] batch 50/1363 (  3.7%)  loss=0.3041  elapsed=0.7min
+  [epoch 20] batch 100/1363 (  7.3%)  loss=0.3052  elapsed=1.3min
+  [epoch 20] batch 150/1363 ( 11.0%)  loss=0.2900  elapsed=2.0min
+  [epoch 20] batch 200/1363 ( 14.7%)  loss=0.2870  elapsed=2.7min
+  [epoch 20] batch 250/1363 ( 18.3%)  loss=0.2871  elapsed=3.3min
+  [epoch 20] batch 300/1363 ( 22.0%)  loss=0.2871  elapsed=4.0min
+  [epoch 20] batch 350/1363 ( 25.7%)  loss=0.2902  elapsed=4.7min
+  [epoch 20] batch 400/1363 ( 29.3%)  loss=0.2915  elapsed=5.3min
+  [epoch 20] batch 450/1363 ( 33.0%)  loss=0.2916  elapsed=5.9min
+  [epoch 20] batch 500/1363 ( 36.7%)  loss=0.2907  elapsed=6.6min
+  [epoch 20] batch 550/1363 ( 40.4%)  loss=0.2888  elapsed=7.2min
+  [epoch 20] batch 600/1363 ( 44.0%)  loss=0.2888  elapsed=7.8min
+  [epoch 20] batch 650/1363 ( 47.7%)  loss=0.2893  elapsed=8.5min
+  [epoch 20] batch 700/1363 ( 51.4%)  loss=0.2892  elapsed=9.1min
+  [epoch 20] batch 750/1363 ( 55.0%)  loss=0.2906  elapsed=9.7min
+  [epoch 20] batch 800/1363 ( 58.7%)  loss=0.2916  elapsed=10.3min
+  [epoch 20] batch 850/1363 ( 62.4%)  loss=0.2929  elapsed=11.0min
+  [epoch 20] batch 900/1363 ( 66.0%)  loss=0.2916  elapsed=11.6min
+  [epoch 20] batch 950/1363 ( 69.7%)  loss=0.2914  elapsed=12.3min
+  [epoch 20] batch 1000/1363 ( 73.4%)  loss=0.2921  elapsed=12.9min
+  [epoch 20] batch 1050/1363 ( 77.0%)  loss=0.2925  elapsed=13.5min
+  [epoch 20] batch 1100/1363 ( 80.7%)  loss=0.2929  elapsed=14.2min
+  [epoch 20] batch 1150/1363 ( 84.4%)  loss=0.2923  elapsed=14.8min
+  [epoch 20] batch 1200/1363 ( 88.0%)  loss=0.2920  elapsed=15.5min
+  [epoch 20] batch 1250/1363 ( 91.7%)  loss=0.2910  elapsed=16.1min
+  [epoch 20] batch 1300/1363 ( 95.4%)  loss=0.2914  elapsed=16.8min
+  [epoch 20] batch 1350/1363 ( 99.0%)  loss=0.2915  elapsed=17.4min
+  [epoch 20] batch 1363/1363 (100.0%)  loss=0.2915  elapsed=17.6min
+
+=== epoch 20/20  train=0.2915  val=0.2928  (18.7min) ===
+
+total time:    442.5 min
+best val loss: 0.2919

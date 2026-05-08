@@ -1,0 +1,6 @@
+Test metrics — baseline
+IoU       : 0.7762
+Precision : 0.8519
+Recall    : 0.8928
+F1        : 0.8500
+MAE       : 0.0644

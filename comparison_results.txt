@@ -1,0 +1,4 @@
+Experiment                     IoU  Precision   Recall       F1      MAE
+baseline                    0.7762     0.8519   0.8928   0.8500   0.0644
+exp1_strong_aug             0.7661     0.8504   0.8797   0.8426   0.0651
+exp2_deeper_lower_lr        0.7742     0.8530   0.8846   0.8482   0.0681
