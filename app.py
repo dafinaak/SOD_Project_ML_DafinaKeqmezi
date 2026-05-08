@@ -9,18 +9,23 @@ import streamlit as st
 
 from sod_model import SODNet
 
-CKPT_PATH   = Path(r"C:\Users\dafin\ml_checkpoints\baseline_best.pt")
-LEGACY_PATH = Path(r"C:\Users\dafin\ml_checkpoints\best_model.pt")
+CKPT_DIR    = Path(r"C:\Users\dafin\ml_checkpoints")
 IMAGE_SIZE  = 128
 THRESHOLD   = 0.5
 DEVICE      = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
+MODELS = {
+    "Baseline (depth=4)":          ("baseline_best.pt",             4),
+    "Exp 1 — Strong augmentation": ("exp1_strong_aug_best.pt",      4),
+    "Exp 2 — Deeper + lower LR":   ("exp2_deeper_lower_lr_best.pt", 5),
+}
+
 
 @st.cache_resource
-def load_model():
-    """Load the model once and cache it across user interactions."""
-    ckpt = CKPT_PATH if CKPT_PATH.exists() else LEGACY_PATH
-    model = SODNet(depth=4).to(DEVICE)
+def load_model(ckpt_filename: str, depth: int):
+    """Load a model from a checkpoint and cache it per checkpoint."""
+    ckpt = CKPT_DIR / ckpt_filename
+    model = SODNet(depth=depth).to(DEVICE)
     model.load_state_dict(torch.load(ckpt, map_location=DEVICE))
     model.eval()
     return model, ckpt
@@ -44,15 +49,25 @@ def make_overlay(img_np, mask_np, color=(1.0, 0.0, 0.0), alpha=0.5):
     return np.clip(np.where(m3 > 0.5, (1 - alpha) * overlay + alpha * layer, overlay), 0, 1)
 
 
-# ---------------------------------------------------------------------------
-# Streamlit UI
-# ---------------------------------------------------------------------------
 st.set_page_config(page_title="Salient Object Detection Demo", layout="wide")
 st.title("Salient Object Detection — Demo")
 st.caption("Upload an image. The model will identify the most visually important region.")
 
-model, ckpt_used = load_model()
-st.caption(f"Using checkpoint: `{ckpt_used.name}` on device `{DEVICE}`")
+selected_label = st.selectbox(
+    "Choose a model",
+    list(MODELS.keys()),
+    index=0,
+    help="Switch between the baseline and your experiments to compare results on the same image.",
+)
+ckpt_filename, depth = MODELS[selected_label]
+
+try:
+    model, ckpt_used = load_model(ckpt_filename, depth)
+except FileNotFoundError:
+    st.error(f"Checkpoint not found: {CKPT_DIR / ckpt_filename}")
+    st.stop()
+
+st.caption(f"Using checkpoint: `{ckpt_used.name}` (depth={depth}) on device `{DEVICE}`")
 
 uploaded = st.file_uploader("Upload an image", type=["jpg", "jpeg", "png"])
 
@@ -84,6 +99,7 @@ if uploaded is not None:
 
     st.markdown("---")
     st.markdown("**Statistics**")
+    st.write(f"Model: {selected_label}")
     st.write(f"Inference time: {inference_ms:.1f} ms")
     st.write(f"Salient pixels: {int(pred_mask.sum())} / {pred_mask.size} "
              f"({100 * pred_mask.mean():.1f}%)")
