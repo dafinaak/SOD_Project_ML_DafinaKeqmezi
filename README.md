@@ -1,4 +1,4 @@
-# Salient Object Detection with U-Net
+# Salient Object Detection rom Scratch (DUTS)
 
 A from-scratch implementation of a U-Net-based Convolutional Neural Network for **Salient Object Detection (SOD)**, trained on the **DUTS dataset** (15,572 image-mask pairs). The model identifies the most visually important regions in an image and produces a binary saliency mask.
 
