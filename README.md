@@ -1,10 +1,5 @@
 # Salient Object Detection with U-Net
 
-[![Python](https://img.shields.io/badge/Python-3.9%2B-blue.svg)](https://www.python.org/)
-[![PyTorch](https://img.shields.io/badge/PyTorch-2.x-ee4c2c.svg)](https://pytorch.org/)
-[![Streamlit](https://img.shields.io/badge/Streamlit-Demo-ff4b4b.svg)](https://streamlit.io/)
-[![License](https://img.shields.io/badge/License-MIT-green.svg)](#license)
-
 A from-scratch implementation of a U-Net-based Convolutional Neural Network for **Salient Object Detection (SOD)**, trained on the **DUTS dataset** (15,572 image-mask pairs). The model identifies the most visually important regions in an image and produces a binary saliency mask.
 
 This project covers the full deep learning pipeline: dataset preparation, model design, training with multiple experiment configurations, quantitative evaluation, and an interactive demo deployment.
